@@ -1,28 +1,14 @@
 'use strict';
 
-var gooplate = require('../lib/gooplate.js');
+if(typeof require !== 'undefined')
+{
+  var Gooplate = require('../lib/gooplate.js');
+}
 
-/*
-  ======== A Handy Little Nodeunit Reference ========
-  https://github.com/caolan/nodeunit
 
-  Test methods:
-    test.expect(numAssertions)
-    test.done()
-  Test assertions:
-    test.ok(value, [message])
-    test.equal(actual, expected, [message])
-    test.notEqual(actual, expected, [message])
-    test.deepEqual(actual, expected, [message])
-    test.notDeepEqual(actual, expected, [message])
-    test.strictEqual(actual, expected, [message])
-    test.notStrictEqual(actual, expected, [message])
-    test.throws(block, [error], [message])
-    test.doesNotThrow(block, [error], [message])
-    test.ifError(value)
-*/
 
-exports['awesome'] = {
+
+this.gooplate_Test = {
   setUp: function(done) {
     // setup here
     done();
@@ -30,7 +16,7 @@ exports['awesome'] = {
   'no args': function(test) {
     test.expect(1);
     // tests here
-    test.equal(gooplate.awesome(), 'awesome', 'should be awesome.');
+    test.equal(Gooplate.awesome(), 'awesome', 'should be awesome.');
     test.done();
   },
 };
