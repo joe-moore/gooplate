@@ -10,13 +10,13 @@ if(typeof require !== 'undefined')
 
 this.gooplate_Test = {
   setUp: function(done) {
-    // setup here
     done();
   },
-  'no args': function(test) {
+  'can create gooplate instance': function(test) {
     test.expect(1);
-    // tests here
-    test.equal(Gooplate.awesome(), 'awesome', 'should be awesome.');
+    test.doesNotThrow(function(){
+      var goo = new Gooplate();
+    });
     test.done();
   },
 };
