@@ -16,7 +16,22 @@ this.gooplate_Test = {
     test.expect(1);
     test.doesNotThrow(function(){
       var goo = new Gooplate();
+      
     });
     test.done();
+  },
+  'can get JSON': function(test) {
+    test.expect(1);
+    
+    var goo = new Gooplate();
+    goo.getJSON(
+      function(err,record)
+      {
+        test.ifError(err);
+        test.done();
+      }
+    );
+    
+     
   },
 };
