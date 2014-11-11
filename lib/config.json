@@ -1,10 +1,3 @@
 {
-	"datasource" : "google",
-	"templatesPath":"/Users/joe/Documents/seven2/ATT/dynamicOffers/svn/dynamic_offers/devtest/templates/",
-	"urlHub":"https://script.google.com/macros/s/AKfycbzdPPx2FzDKsG1v1NfIIOxlWUhbzvRuC8PKC4d_wtv6pEQ6-EJs/exec",
-	"urlState":"https://script.google.com/macros/s/AKfycbwNNi9SI5euvz5xH_YBBrQAXJra3DOxP54Ds5ADtjzJ48Q4qUo/exec",
-	"urlCity":"https://script.google.com/macros/s/AKfycbyKDWvz9k76RqMLeSw9BEGWA0Gh7TLJn6zZ-5-Y45OcR85joAC3/exec",
-	"urlCityLocation":"https://script.google.com/macros/s/AKfycbzM_a6r68CIfpX4bOh3UiYXoTYXrf8xQ448Mg1shrR67GibDGE/exec?spreadsheet=1bA9WwwRdP2h4qA8Ap6vRBKy4Mt7kkix76c9G1SFfoTo&sheet=cityLocation",
-	"urlPlotToolStateList":"http://dynamic.d.seven2.net/getDynamicState.ashx",
-	"urlPlotToolStatePlots":"http://dynamic.d.seven2.net/getDynamicPlot.ashx?stateID="  
+	"testURL" : "https://script.google.com/macros/s/AKfycbzM_a6r68CIfpX4bOh3UiYXoTYXrf8xQ448Mg1shrR67GibDGE/exec?spreadsheet=1PcZjEkJA5KoKpllsvm9oBFy6NakyQI7tWyg2gjUvczs&sheet=adapter" 
 }

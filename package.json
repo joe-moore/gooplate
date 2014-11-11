@@ -35,6 +35,8 @@
   },
   "keywords": [],
   "dependencies": {
-    "request": "^2.47.0"
+    "request": "^2.47.0",
+    "string": "^2.2.0",
+    "underscore": "^1.7.0"
   }
 }
