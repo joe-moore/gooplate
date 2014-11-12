@@ -7,9 +7,6 @@ if(typeof require !== 'undefined')
   config = require('../lib/config.json');
 }
 
-
-
-
 this.gooplate_Test = {
   setUp: function(done) {
     done();
@@ -26,7 +23,7 @@ this.gooplate_Test = {
     test.expect(1);
     
     var goo = new Gooplate();
-    goo.getJSON(
+    goo.getJSON(config.url+"spreadsheet="+config.spreadsheet+"&sheet="+config.sheet,
       function(err,record)
       {
         test.ifError(err);
@@ -41,10 +38,24 @@ this.gooplate_Test = {
     
     var goo = new Gooplate();
     
-    goo.generateOutput(config.templateFile,config.outputFile,
+    goo.generateOutputFromURL(config.url+"spreadsheet="+config.spreadsheet+"&sheet="+config.sheet, config.templateFile,config.outputFile,
       function(err,pass)
       {
-        console.log("err:"+err);
+        test.ok(pass,'generate output');
+        test.done();
+      }
+    );
+    
+     
+  },
+  'can generate template from spreadsheet and sheet': function(test) {
+    test.expect(1);
+    
+    var goo = new Gooplate();
+    
+    goo.generateOutputFromID( config.spreadsheet, config.sheet,
+      function(err,pass)
+      {
         test.ok(pass,'generate output');
         test.done();
       }

@@ -1,5 +1,7 @@
 {
-	"testURL" : "https://script.google.com/macros/s/AKfycbzM_a6r68CIfpX4bOh3UiYXoTYXrf8xQ448Mg1shrR67GibDGE/exec?spreadsheet=1PcZjEkJA5KoKpllsvm9oBFy6NakyQI7tWyg2gjUvczs&sheet=adapter",
-	"templateFile":"lib/test.html",
-	"outputFile":"lib/output.html" 
+	"url" : "https://script.google.com/macros/s/AKfycbzM_a6r68CIfpX4bOh3UiYXoTYXrf8xQ448Mg1shrR67GibDGE/exec?",
+	"templateFile":"../lib/template.html",
+	"outputFile":"../lib/output.html",
+	"spreadsheet":"1PcZjEkJA5KoKpllsvm9oBFy6NakyQI7tWyg2gjUvczs",
+	"sheet":"adapter" 
 }

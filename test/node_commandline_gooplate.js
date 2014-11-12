@@ -1,12 +1,17 @@
 var config = require('../lib/config.json');
 var Gooplate = require('../lib/gooplate.js');
 
-var test=new Gooplate();
+var goo=new Gooplate();
 
-test.generateOutput("../lib/test.html","../lib/output.html",
+ 
+goo.generateOutputFromID( "1PcZjEkJA5KoKpllsvm9oBFy6NakyQI7tWyg2gjUvczs", "adapter",
   function(err,pass)
   {
-    console.log("err:"+err);
-    
+  	if(err)
+  	{
+  		console.log(err);
+  	}
   }
 );
+
+ 

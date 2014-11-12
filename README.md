@@ -7,7 +7,15 @@ Install the module with: `npm install gooplate`
 
 ```javascript
 var gooplate = require('gooplate');
-gooplate.awesome(); // "awesome"
+
+var goo = new Gooplate();
+    
+goo.generateOutputFromID( config.spreadsheet, config.sheet,
+  function(err,pass)
+  {
+     
+  }
+);
 ```
 
 ## Documentation
